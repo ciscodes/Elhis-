@@ -1,20 +1,75 @@
+
+
 body {
-    font-family: sans-serif;
-    margin: 0;
-  }
-  
-  #mynavbar {
-    display: flex;
-    background-color: rgb(209, 21, 14);
-  }
-  
-  #logo {
-    height: 100px;
-    width: 70%;
-    background-color: rgb(209, 21, 14);
-    color: white;
-    display: flex;
-    padding-left: 20px;
-    align-items: center;
-  }
-  
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+#mynavbar {
+  display: flex;
+  background-color:white;
+}
+
+#logo {
+  height: 250px;
+width:70%;
+background-color: white;
+  color: black;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+}
+
+
+
+#links {
+  width: 30%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+#links a {
+  color: rgb(15, 15, 15);
+  font-size: 200%;
+  text-decoration: none;
+}
+
+#header {
+  height: 580px;
+  background-image: url("https://artfiles.alphacoders.com/681/68159.jpg");
+  display: grid;
+  place-items: center;
+}
+
+#main-content h3 {
+color: rgb(248, 1, 1);
+font-family :'Roboto', sans-serif;
+font-size: 8ex ;
+
+}
+
+#Wonderful {
+  color: rgb(252, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-size: 5ex ;
+}
+
+#dates {
+padding-left: 450px;  
+color: rgb(247, 4, 4);
+  font-family: 'Roboto', sans-serif;
+  font-size: 3ex;
+}
+
+
+#ticket a {
+  margin-left: 550px;
+  color: rgb(3, 3, 3);
+  font-family: 'Roboto', sans-serif;
+  font-size: 3ex;
+}
+
+
