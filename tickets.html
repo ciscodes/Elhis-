@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="myNav">                                 <!-- Any element can be used here -->
+      <ul>
+          <li><a href="index.html">Contact us</a></li>
+          <li><a href="exhibition.html">About us</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="about.html">Exhibition</li>
+          <li><a href="contact.html">Home</a></li>
+      </ul>
+      <ul>
+        <h2>ELHIS</h2>
+      </ul>
+  </nav>
+
+<h3>Reserve a Ticket</h3>
+
+  <div class="container">
+    <form action="action_page.php">
+  
+      <label for="fname">Full Name</label><br />
+      <input type="text" id="fname" name="fullname" placeholder="Your Name"><br />
+  
+      <label for="email">E-Mail</label><br />
+      <input type="text" id="email" name="email" placeholder="Your E-Mail"><br />
+  
+      <label for="exhibition">Exhibition</label><br />
+      <select id="exhibition" name="exhibition"><br />
+        <option value="current">Current</option><br />
+        <option value="upcoming">Upcoming</option><br />
+      </select>
+  
+      <label for="quantity">Quantity</label><br />
+      <select id="quantity" name="quantity"><br />
+        <option value="number1">1</option><br />
+        <option value="number2">2</option><br />
+        <option value="number3">3</option><br />
+        <option value="number4">4</option><br />
+        <option value="number5">5</option><br />
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write a message.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+  <script src="Index.js"></script>
+</body>
+</html>
