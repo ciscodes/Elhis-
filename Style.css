@@ -5,32 +5,21 @@ body {
   margin: 0;
 }
 
-.myNav {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-}
-
-.myNav ul {
-  list-style:none;
-  padding: 0;
-  margin: 0;
-}
 
 .myNav li {
-  
-  float: right;
-  font-size: x-large;
-
+  display: inline;
+  font-size: large;
+flex-direction: row;
+float: left;
 }
 
 .myNav li a {
   
-  display: inline-block;
-  text-align: center;
+  display:block;
   padding: 14px 16px;
   text-decoration: none;
   color: #050505;
+  height: 200px;
 }
 
 #header {
@@ -49,12 +38,6 @@ font-family :'Roboto', sans-serif;
 font-size: 8ex ;
 }
 
-h2 {
-
-font-family :'Roboto', sans-serif;
-font-size: 60px ;
-
-}
 
 #Wonderful {
   color: rgb(252, 0, 0);
@@ -78,4 +61,36 @@ color: rgb(247, 4, 4);
   text-decoration: none;
 }
 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* submit button with a red background color etc */
+input[type=submit] {
+  background-color: #fa1f02;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button > a darker red color */
+input[type=submit]:hover {
+  background-color: #ec0a02;
+}
+
+/* background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #ececec;
+  padding: 20px;
+}
