@@ -112,9 +112,10 @@ body  {
   .banner {
 
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin-top: 60px;
-    background-image: url("https://images.unsplash.com/photo-1565105337533-d23f47c0fd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1565105337533-d23f47c0fd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   
   }
   .container h1 {
@@ -127,11 +128,31 @@ body  {
     }
   
   .container h3 {
-      font-size: 2.5ex ;
+      font-size: 2ex ;
       }
   
   .tickets { 
     font-size: 2ex;
   }
+/* Footer */
+
+.footer {
+    position:relative;
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 90px;
+    background-color: #ffffff;
+  }
+
+  .footer-text-left {
+    font-size:15px;
+    padding-left:40px;
+    float:left;
+    word-spacing:20px;
+  }
   
-  
+  a.menu:hover {
+    background-color:rgba(213, 101, 101, 0.801);
+    font-size:20px;
+  }
