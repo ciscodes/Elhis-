@@ -1,56 +1,91 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width" />
-    <title>Exhibition</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  
-  <nav class="myNav">                                 <!-- Any element can be used here -->
-   
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="exhibition.html">Exhibition</a></li>
-        <li><a href="tickets.html">Tickets</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-    </ul>
-    <ul>
-      <h2>ELHIS</h2>
-    </ul>
-</nav>
-  <body>
-    <main id="exhibition">
+<html lang="en">
 
-      <h2>Upcoming Exhibition</h2>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exhibition.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+        rel="stylesheet">
+
+    <title>Responsive Navbar</title>
+
+</head>
+
+    <body>
+        <nav class="navbar">
+
+        <div class="brand-title"> ELHIS
+
+        </div>
+       
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+       
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Exhibitions</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+         </nav>
+
+         <div id="myvideo">
+         <video autoplay muted loop >
+          <source src="https://vod-progressive.akamaized.net/exp=1633523011~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4099%2F12%2F320498720%2F1242997706.mp4~hmac=09f9e27f042b61f5ef9e59be434e4c16be3de19889cdc4e9e72661340e76e5bc/vimeo-prod-skyfire-std-us/01/4099/12/320498720/1242997706.mp4?filename=Pexels+Videos+1970093.mp4" style="width:100%;">
+          Your browser does not support the video tag.
+        </video>
+        </div>
       
-     
-      <hr/>
+
+      <h6> Fairytales by Josh Knight</h6>
       
-      <div id="ticket">
-        
-        <p><a href="tickets.html">Reserve Ticket</a><p>
-    
+      <div id="upcomingtext1">
+      <span>Knight's paintings are unique. He brings to life the colours of the world with wild and riotous movement but, the chaos on the canvas does not reflect the meticulous and inventive process that allowed him to capture bodies in motion.
+        After the talk Josh will be able to answer your questions in a live Q&A.</span>
+</div>
+
+
+<div id="upcomingabout">      
+    <h2>About the Artist</h2>
+    </div>
+
+<div id="upcomingtext2">
+      <span>Josh Knight, an artist from Basel, is one of European's most admired landscape painters. His evocative impressionist paintings with significantly reduced details masterfully walk the fine line between impact and subtlety. Josh Knight's artistic purpose of documenting his impressions of the European landscape and reverence for nature keeps him exploring the backroads of the continent in search of the next motif. 
+      </span>
       </div>
 
-      <h1> In between two ferns by Josh Knight</h1>
-      <p>Knight's paintings are unique. He brings to life the colours of the world with wild and riotous movement but, the chaos on the canvas does not reflect the meticulous and inventive process that allowed him to capture bodies in motion.
-        After the talk Josh will be able to answer your questions in a live Q&A.</p>
-      <h2>About the Artist</h2>
-      <p>Josh Knight, an artist from Basel, is one of European's most admired landscape painters. His evocative impressionist paintings with significantly reduced details masterfully walk the fine line between impact and subtlety. Josh Knight's artistic purpose of documenting his impressions of the European landscape and reverence for nature keeps him exploring the backroads of the continent in search of the next motif. 
-        </p>
-        <section class="otherpicture">
+        <section class="upcomingartist">
             <img src="https://images.freeimages.com/images/small-previews/e9b/painter-1522795.jpg"/>      
           </section>
         
 
         <div id="exhibition">
         
-          <p><a href="exhibition.html">Current Exhibition</a><p> 
+          <p><a href="exhibition.html">Current Exhibition</a></p>
       
         </div> 
-    </section>
+
+        <div class="footer">
+          <p class="footer-text-left">
+            <a href="index.html" class="menu">Home</a>
+            <a href="#" class="menu">Exhibitions</a>
+            <a href="#" class="menu">Tickets</a>
+          
+        </div>
+
+    <script src="index.js"></script>
+
   </body>
 </html>
