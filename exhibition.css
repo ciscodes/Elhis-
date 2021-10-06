@@ -99,7 +99,7 @@ body  {
 }
 
 
-  /*current exhibition css*/
+  /*CURRENT EXHIBITION CSS*/
 
   * {box-sizing:border-box}
 
@@ -180,98 +180,104 @@ margin:auto;
 
   h3{
     color: rgb(252, 2, 2);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 5ex ;
+    padding: 50px 60px 0;
   }
   
-  #text1 span{
-    font-family: 'Roboto', sans-serif;
+  #text1 p{
+    font-family: 'Barlow', sans-serif;
   font: bold;
   color: rgb(13, 13, 14);
   font-size: 3ex;
+  padding: 10px 60px;
   }
   
   #aboutartist h4 {
     color:rgb(13,13,14);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 5ex;
+    padding: 20px 60px 0;
   }
   
-  #text2 span{
-  font-family: 'Roboto', sans-serif;
+  #text2 p{
+  font-family: 'Barlow', sans-serif;
   font: bold;
   color: rgb(13, 13, 14);
   font-size: 3ex;
-  float: left;
-  width: 60%;
-  height: 400px;
+  padding: 10px 60px;
   }
   
   #artistphoto {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
+    justify-content: center;
+    margin: 3em;
   }
 
   #upcoming a {
     color: rgb(252, 2, 2);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 3ex ;
     text-decoration: none;
-    padding-left: 600px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;  
+    margin: 3em; 
   }
   
  
 
-  /*upcoming exhibition css */
+  /*UPCOMING EXHIBITION CSS */
   
   h6{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 5ex ;
     color: rgb(252,2,2);
-    margin-top: 2em;
+    padding: 50px 60px 0;
+    margin: 0%;
   }
 
   #upcomingtext1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font: bold;
     color: rgb(13, 13, 14);
     font-size: 3ex;
-    height: 150px;
+padding: 10px 60px;
   }
 
   #upcomingabout{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 3ex ;
     color: rgb(13,13,14);
+    padding: 20px 60px 0;
   }
   
   
 
-  #upcomingtext2 {
-    font-family: 'Roboto', sans-serif;
+  #upcomingtext2 p {
+    font-family: 'Barlow', sans-serif;
     font: bold;
     color: rgb(13, 13, 14);
     font-size: 3ex;
-    float: left;
-    width: 60%;
-    height: 400px;
+padding: 10px 60px ;
   }
 
  
   .upcomingartist {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
+    justify-content: center;
+    margin: 3em;
   }
   
   #exhibition a {
     color: rgb(252, 2, 2);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 3ex ;
     text-decoration: none;
-    padding-left: 600px;
-  }
+display: flex;
+justify-content : center;  
+margin: 3em;
+}
   
   /*footer css*/
 
@@ -282,6 +288,7 @@ margin:auto;
     width:100%;
     height: 90px;
     background-color: rgb(13, 13, 14);
+    font-family: 'Barlow' , sans-serif;
   }
 
   .footer-text-left {
