@@ -1,78 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleindex.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">  
+  </head>
+  <body>
+    
+<nav class="navbar">
 
-    <title>Responsive Navbar</title>
+      <div class="brand-title"> ELHIS
 
-</head>
+      </div>
+     
+      <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </a>
+     
+      <div class="navbar-links">
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="exhibition.html">Exhibitions</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
-    <body>
-        <nav class="navbar">
+          </ul>
 
-        <div class="brand-title"> ELHIS
+      </div>
 
-        </div>
-       
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-       
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
-            </ul>
-
-        </div>
-
-         </nav>
-
-<h3>Reserve a Ticket</h3>
+</nav>
 
   <div class="container">
-    <form action="action_page.php">
-  
-      <label for="fname">Full Name</label><br />
-      <input type="text" id="fname" name="fullname" placeholder="Your Name"><br />
-  
-      <label for="email">E-Mail</label><br />
-      <input type="text" id="email" name="email" placeholder="Your E-Mail"><br />
-  
-      <label for="exhibition">Exhibition</label><br />
-      <select id="exhibition" name="exhibition"><br />
-        <option value="current">Current</option><br />
-        <option value="upcoming">Upcoming</option><br />
-      </select>
-  
-      <label for="quantity">Quantity</label><br />
-      <select id="quantity" name="quantity"><br />
-        <option value="number1">1</option><br />
-        <option value="number2">2</option><br />
-        <option value="number3">3</option><br />
-        <option value="number4">4</option><br />
-        <option value="number5">5</option><br />
-      </select>
+    <div class="ticket-box">
+      <div class="ticket-left">
+        <h2>Reserve a Ticket</h2>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Write a message.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-  <script src="Index.js"></script>
+        <section>
+          <form id="ticketForm">
+        
+            <label for="fname">Full Name</label><br />
+            <input type="text" id="fname" name="fullname" placeholder="Your Name"><br />
+        
+            <label for="email">E-Mail</label><br />
+            <input type="text" id="email" name="email" placeholder="Your E-Mail"><br />
+        
+            <label for="exhibition">Exhibition</label><br />
+            <select id="exhibition" name="exhibition"><br />
+              <option value="current">A Wonderfull Autumn – 21/11/21  Adult 25€</option><br />
+              <option value="current">A Wonderfull Autumn – 21/11/21  Senior 22€</option><br />
+              <option value="upcoming">Fairytales – 12/12/21  Adult 25€</option><br />
+            </select>
+        
+            <label for="quantity">Quantity</label><br />
+            <select id="quantity" name="quantity"><br />
+              <option value="number1">1</option><br />
+              <option value="number2">2</option><br />
+              <option value="number3">3</option><br />
+              <option value="number4">4</option><br />
+              <option value="number5">5</option><br />
+            </select>
+      
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write a message.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+
+      </div>
+      <div class="ticket-right">
+        <h2>ELHIS welcomes you!</h2>
+        <p>We've made changes so your visit is safe, comfortable, and relaxing. Social distancing is encouraged, and all visitors age 2 and older must continue to wear masks while in the building.   As of July 15, we no longer require timed tickets. Come and enjoy the galleries and stay as long as you like during open hours. For the best experience, we  encourage you to reserve tickets online. Tickets are also available onsite, though our capacity remains limited.</p><br>
+        <h2>Opening Hours</h2>
+        <p>Mon-Friday 9:00 - 16:00</p><br>
+
+        <table>
+          <thead>
+          <tr>
+           <th>Prices</th>
+           <th>General Admission</th>
+           <th>Group General Admission</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>Adult</td>
+            <td>25€</td>
+            <td>15€</td>
+          </tr>
+          <tr>
+            <td>Senior (65+)</td>
+            <td>22€</td>
+            <td>17€</td>
+          </tr>
+          <tr>
+            <td>Kids (>18)</td>
+            <td>18€</td>
+            <td>16€</td>
+          </tr>
+        </tbody>
+        </table>
+</div>
+</div>
+</div>
+
+<div class="footer">
+  <p class="footer-text-left">
+    <a href="index.html" class="menu">Home</a>
+    <a href="exhibition.html" class="menu">Exhibitions</a>
+    <a href="tickets.html" class="menu">Tickets</a>
+      
+    </div>
+    
+  <script src="index.js"></script>
+
 </body>
 </html>
+
+
+

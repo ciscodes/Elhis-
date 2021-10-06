@@ -1,17 +1,17 @@
-
-
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-}
-
-
-/* NavBar */
-
-body  {
+  font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
 }
+
+*   {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+
+
+/*CSS FOR NAV-BAR (USED ON ALL PAGES)*/
 
 .navbar {
   display: flex;
@@ -103,65 +103,362 @@ body  {
 
 }
 
-#main-content h3 {
-color: rgb(248, 1, 1);
-font-family :'Roboto', sans-serif;
-font-size: 8ex ;
+/* CSS FOR HOME-PAGE BODY*/
+  
+  
+.container {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto ;
+}
+
+.banner {
+
+  width: 100%;
+  height: 450px;
+  margin-top: 60px;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1565105337533-d23f47c0fd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+
+}
+.container h1 {
+  color: rgb(0, 0, 0);
+font-size: 3ex ;
+}
+  
+.container h2 {
+  font-size: 3.5ex ;
+  }
+
+.container h3 {
+    font-size: 2ex ;
+    }
+
+.tickets { 
+  font-size: 2ex;
 }
 
 
-#Wonderful {
-  color: rgb(252, 0, 0);
-  font-family: 'Roboto', sans-serif;
-  font-size: 5ex ;
+/* CSS FOR HOME-PAGE FOOTER (USED ON ALL PAGES)*/
+
+.footer {
+  position:relative;
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: #ffffff;
 }
 
-#dates {
-padding-left: 450px;  
-color: rgb(247, 4, 4);
-  font-family: 'Roboto', sans-serif;
-  font-size: 3ex;
+.footer-text-left {
+  font-size:15px;
+  padding-left:40px;
+  float:left;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:rgba(213, 101, 101, 0.801);
+  font-size:20px;
 }
 
 
-#ticket a {
-  margin-left: 550px;
-  color: rgb(3, 3, 3);
-  font-family: 'Roboto', sans-serif;
-  font-size: 3ex;
-  text-decoration: none;
+
+/* CSS FOR CONTACT-PAGE */
+
+body {
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	font-family: 'Barlow', sans-serif;
 }
+
+
+.contact-wrap {
+	width: 70%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.contact-in {
+	padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	background: url("https://images.unsplash.com/photo-1536598069659-5c53d2367f5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80");
+	color: #fff;
+
+}
+
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #c31432;
+}
+
+.contact-in:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+
+.contact-in h1 {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+
+.contact-in h2 i {
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in ul li a i {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+}
+
+
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+
+.contact-in-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+
+}
+
+.contact-in-input::placeholder {
+	color: #fff;
+}
+
+
+.contact-in-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+	color: #fff;
+}
+
+.contact-in-textarea::placeholder {
+	color: #fff;
+}
+
+.contact-in-btn {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+	
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+/*CSS FOR TICKET-PAGE*/
 
 /* Style inputs with type="text", select elements and textareas */
+    
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: none;
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+
+  /* submit button with a red background color etc */
+  input[type=submit] {
+    background-color: #e4e0e0;
+    color:#ec0a02;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  label {
+      color:#fcfafa;
+	  text-align: left;
+  }
+
+  .ticket-left h2 {
+      color:#fcfafa;
+      margin-bottom: 40px;
+      font-weight: 600;
+  }
+  
+  .ticket-right h2 {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.ticket-right p {
+    font-size: larger;
+    font-weight: 600;
 }
 
-/* submit button with a red background color etc */
-input[type=submit] {
-  background-color: #fa1f02;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  /* When moving the mouse over the submit button > a darker red color */
+  input[type=submit]:hover {
+    background-color: #a4a3a3;
+  }
+  
+  /* background color and some padding around the form */
+  .container {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  
+  .ticket-box{
+    background-color: rgb(224, 3, 3);
+    display: flex;
+  }
+  .ticket-left{
+      flex-basis: 50%;
+      padding: 40px 60px;
+  }
+  .ticket-right{
+    flex-basis: 50%;
+    padding: 40px;
+    background-color: #f5f3f3;
+    color:rgb(2, 2, 2);
+    line-height: 200%;
 }
 
-/* When moving the mouse over the submit button > a darker red color */
-input[type=submit]:hover {
-  background-color: #ec0a02;
+table{ 
+border-collapse:separate; 
+border-spacing: 15px 15px; 
+} 
+th{ 
+background-color: #e6e5e5; 
+color: rgb(250, 2, 2); 
+} 
+th,td{ 
+width: 150px; 
+text-align: left; 
+border: none; 
+padding: 10px;
 }
 
-/* background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #ececec;
-  padding: 20px;
-}
+
+
+
+
+
