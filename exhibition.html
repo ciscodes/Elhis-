@@ -1,60 +1,140 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width" />
-    <title>Exhibition</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exhibition.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+        rel="stylesheet">
+
+    <title>Responsive Navbar</title>
+
 </head>
-<body>
-  
-  <nav class="myNav">                                 <!-- Any element can be used here -->
-   
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="exhibition.html">Exhibition</a></li>
-        <li><a href="tickets.html">Tickets</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="contact.html">Contact us</a></li>
-    </ul>
-    <ul>
-      <h2>ELHIS</h2>
-    </ul>
-</nav>
+
+    <body>
+        <nav class="navbar">
+
+        <div class="brand-title"> ELHIS
+
+        </div>
+       
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+       
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Exhibitions</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+         </nav>
   <body>
-    <main id="exhibition">
+     
+<!-- Slideshow container -->
+<div class="slideshow-container">
 
-      <h2>Current Exhibition</h2>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" >
+    <img src="https://images.unsplash.com/photo-1544277811-ce00cbaa4642?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvbnRlbXBvcmFyeSUyMGFydHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:100%;">
+  </div>
 
-      <section class="pictures">
-        <img src=" https://media.istockphoto.com/photos/abstract-background-artistic-characteristic-picture-id1279367204?b=1&k=20&m=1279367204&s=170667a&w=0&h=OwYtRk9qzJPcyJiD5mvGh85rsHvqTz8e88mEBnosbBg="/>        
-        <img src="https://media.istockphoto.com/photos/paint-on-canvas-coloured-sections-with-bright-shades-picture-id1282500710?b=1&k=20&m=1282500710&s=170667a&w=0&h=JuBCl40zOvbQ6SJhLJVYiPMvP5iRGhT-HEeJr9kwvUk="/>
-        <img src="https://media.istockphoto.com/photos/abstract-background-artistic-characteristic-picture-id1279367232?b=1&k=20&m=1279367232&s=170667a&w=0&h=-gz8x8VZTTVYJMZwdie6Qt9zC5hg1XeLeB9TWlEtF-g="/>
-      </section>
-      <hr/>
-      
-      <div id="ticket">
-        
-        <p><a href="tickets.html">Reserve Ticket</a><p>
+  <div class="mySlides fade">
+    <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"style="width:100%;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://images.unsplash.com/photo-1547560896-7615fab7b8b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"style="width:100%;">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
     
+
+      <h3>A Wonderful Autumn by Melina Maninga</h3>
+
+      <div id="text1">
+      <span>Maninga’s paintings are unique. She brings to life the colours of the world with wild and riotous movement but, the chaos on the canvas does not reflect the meticulous and inventive process that allowed him to capture bodies in motion.
+        After the talk Mel will be able to answer your questions in a live Q&A.</span>
       </div>
 
-      <h1>A Wonderful Autumn by Melina Maninga</h1>
-      <p>Maninga’s paintings are unique. She brings to life the colours of the world with wild and riotous movement but, the chaos on the canvas does not reflect the meticulous and inventive process that allowed him to capture bodies in motion.
-        After the talk Mel will be able to answer your questions in a live Q&A.</p>
-      <h2>About the Artist</h2>
-      <p>Expansive in their vision, Melina Maninga paintings are seemingly simple yet highly skilled in application. Particularly of note are her beautiful paintings of contemporary art. Her colours are famous for the moods they depict.
+<div id="aboutartist">
+      <h4>About the Artist</h4>
+</div>
+      <div id="text2">
+      <span>Expansive in their vision, Melina Maninga paintings are seemingly simple yet highly skilled in application. Particularly of note are her beautiful paintings of contemporary art. Her colours are famous for the moods they depict.
         Born in 1980 in South Africa, Melina is self taught and started to paint full time in 1999. She is an artist whose career spans two decades and several continents with works in major collections all over the world. Melina's bold colour palette and material choices, along with her unique technique and talent create a rare combination of beautiful contemporary art built on traditional foundations. These works are more than a depiction of the artist's love affair with poetry. These are paintings of love - loaded with passion, emotion and positivity. Join us for 'A Wonderful Autumn'.        
-        </p>
-        <div id="exhibition">
+      </span>
+        </div>
 
-          <section class="artistpicture">
+
+        <div id="artistphoto">
             <img src="https://images.freeimages.com/images/small-previews/c0b/birds-maker-1536163.jpg"/>      
-          </section>
+        </div>
         
-          <p><a href="upcomingexhibition.html">Upcoming Exhibition</a><p> 
+        <div id="upcoming">
+        
+          <p><a href="upcomingexhibition.html">Upcoming Exhibition</a></p>
       
-        </div> 
-    </section>
+        </div>
+    
+        <div class="footer">
+          <p class="footer-text-left">
+            <a href="index.html" class="menu">Home</a>
+            <a href="#" class="menu">Exhibitions</a>
+            <a href="#" class="menu">Tickets</a>
+        </div>   
+
+    <script src="Index.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
   </body>
 </html>

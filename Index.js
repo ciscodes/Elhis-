@@ -13,4 +13,3 @@ document.getElementById("ticketForm").addEventListener("submit", function (event
     alert(message);
   });
 
-
