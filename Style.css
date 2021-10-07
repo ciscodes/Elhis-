@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 255, 255, 1);
-  background-color:rgb(0, 0, 0)
+  background-color:#222222
 }
 
 .brand-title  {
@@ -107,37 +107,32 @@ body {
   
   
 .container {
-  text-align: center;
-  max-width: 70%;
+  text-align: left;
+  max-width: 45%;
   margin: 0 auto ;
+
 }
 
-.banner {
+.image img {
 
   width: 100%;
-  height: 450px;
-  margin-top: 60px;
+  height: auto;
   background-position: center;
-  background-image: url(https://images.unsplash.com/photo-1565105337533-d23f47c0fd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-
 }
-.container h1 {
-  color: rgb(0, 0, 0);
-font-size: 3ex ;
+.content h1 {
+  font-size: 3ex ;
+  justify-content: left;
+  padding-left: 0;
 }
   
-.container h2 {
-  font-size: 3.5ex ;
+.content h2 {
+  font-size: 3.5ex;
+  color: #c31432;
   }
 
-.container h3 {
+.content h4 {
     font-size: 2ex ;
     }
-
-.tickets { 
-  font-size: 2ex;
-}
-
 
 /* CSS FOR HOME-PAGE FOOTER (USED ON ALL PAGES)*/
 
@@ -146,15 +141,28 @@ font-size: 3ex ;
   bottom:0;
   left:0;
   width:100%;
-  height: 90px;
-  background-color: #ffffff;
+  height: 55px;
+  background-color: #1f1f1f;
+  
 }
 
 .footer-text-left {
   font-size:15px;
-  padding-left:40px;
-  float:left;
-  word-spacing:20px;
+  color: #e4e0e0;
+  word-spacing:35px;
+  width: 100%;
+  height: 40px;
+  padding-top: 15px;
+  border-top: 1px solid rgb(196, 195, 195);
+  position: absolute;
+  bottom: 0px; 
+  left: 0px; 
+  text-align: center; 
+}
+
+.footer-text-left a {
+ text-decoration:none;
+ color: white;
 }
 
 a.menu:hover {
