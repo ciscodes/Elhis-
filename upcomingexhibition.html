@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="exhibition.css">
+    <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
         rel="stylesheet">
 
@@ -28,26 +28,53 @@
         </a>
        
         <div class="navbar-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Tickets</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+          <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="exhibition.html">Exhibitions</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
-            </ul>
+        </ul>
 
         </div>
 
          </nav>
 
-         <div id="myvideo">
-         <video autoplay muted loop >
-          <source src="https://vod-progressive.akamaized.net/exp=1633523011~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4099%2F12%2F320498720%2F1242997706.mp4~hmac=09f9e27f042b61f5ef9e59be434e4c16be3de19889cdc4e9e72661340e76e5bc/vimeo-prod-skyfire-std-us/01/4099/12/320498720/1242997706.mp4?filename=Pexels+Videos+1970093.mp4" style="width:100%;">
-          Your browser does not support the video tag.
-        </video>
-        </div>
-      
+        <!-- Slideshow container -->
+<div class="slideshow-container1">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade1">
+    <div class="numbertext"></div>
+    <img src="https://images.unsplash.com/photo-1614550538753-26eceba4d3c2?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade1">
+    <div class="numbertext"></div>
+    <img src="https://images.unsplash.com/photo-1612151271854-281238a96afb?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:100%">
+    <div class="text"> </div>
+  </div>
+
+  <div class="mySlides fade1">
+    <div class="numbertext"></div>
+    <img src="https://images.unsplash.com/photo-1611600055591-2ae4d1ccaa75?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTJ8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 
       <h6> Fairytales by Josh Knight</h6>
       
@@ -71,21 +98,43 @@
           </section>
         
 
-        <div id="exhibition">
-        
-          <p><a href="exhibition.html">Current Exhibition</a></p>
-      
-        </div> 
-
         <div class="footer">
           <p class="footer-text-left">
             <a href="index.html" class="menu">Home</a>
-            <a href="#" class="menu">Exhibitions</a>
-            <a href="#" class="menu">Tickets</a>
+            <a href="exhibition.html" class="menu">Exhibition</a>
+            <a href="tickets.html" class="menu">Tickets</a>
           
         </div>
 
-    <script src="index.js"></script>
-
+        <script src="Index.js"></script>
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+          
   </body>
 </html>
